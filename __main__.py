@@ -17,7 +17,7 @@ from nuki import Nuki, NukiManager, BridgeType, DeviceType
 
 LOG_FORMAT = "%(asctime)s.%(msecs)03d|%(levelname).1s|%(filename)s:%(lineno)d|%(message)s"
 
-logger = logging.getLogger("raspinukibridge")
+logger = logging.getLogger("dockernukibridge")
 handler = logging.StreamHandler(sys.stdout)
 handler.setFormatter(logging.Formatter(fmt=LOG_FORMAT, datefmt="%Y-%m-%d %H:%M:%S"))
 logger.addHandler(handler)
@@ -252,7 +252,7 @@ if __name__ == "__main__":
         print(f"server:\n"
               f"  host: 0.0.0.0\n"
               f"  port: 8080\n"
-              f"  name: RaspiNukiBridge\n"
+              f"  name: DockerNukiBridge\n"
               f"  app_id: {app_id}\n"
               f"  token: {token}\n"
               f"  id: {server_id}\n")

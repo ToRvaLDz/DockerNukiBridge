@@ -118,7 +118,7 @@ class NukiClientType(enum.Enum):
     KEYPAD = 0x03
 
 
-logger = logging.getLogger("raspinukibridge")
+logger = logging.getLogger("dockernukibridge")
 
 
 class NukiManager:
